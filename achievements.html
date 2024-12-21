@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="dark-mode">
+  <header class="header dark-mode">
+    <nav class="dark-mode">
+      <ul>
+        <li><a href="index.html" class="dark-mode">Home</a></li>
+        <li><a href="about.html" class="dark-mode">About</a></li>
+        <li><a href="achievements.html" class="dark-mode">Achievements</a></li>
+        <li><a href="resume.html" class="dark-mode">Resume</a></li>
+        <li><a href="contact.html" class="dark-mode">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="achievements" class="achievements">
+    <h2>My Achievements</h2>
+    
+    <div class="card dark-mode">
+      <i class="fas fa-certificate icon"></i>
+      <h3>Machine Learning Specialization</h3>
+      <p><strong>Date:</strong> November 2024</p>
+      <p>Completed Andrew Ng's Machine Learning Specialization on Coursera, mastering foundational ML concepts and algorithms.</p>
+    </div>
+    
+    <div class="card dark-mode">
+      <i class="fas fa-star icon"></i>
+      <h3>5-Star Python Badge</h3>
+      <p><strong>Date:</strong> November 2024</p>
+      <p>Awarded by HackerRank for demonstrating advanced proficiency in Python programming.</p>
+    </div>
+    
+    <div class="card dark-mode">
+      <i class="fas fa-medal icon"></i>
+      <h3>Google Developer Group Learning Badge</h3>
+      <p><strong>Date:</strong> November 2024</p>
+      <p>Received the Learning Badge from GDG for active participation in tech learning and community contributions.</p>
+    </div>
+  </section>
+
+  <footer class="dark-mode">
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <button id="theme-toggle-button" class="theme-toggle-button" onclick="toggleTheme()">🌙</button>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+
+      const elements = document.querySelectorAll('header, footer, nav, .card, form, nav ul li a');
+      elements.forEach(el => {
+        el.classList.toggle('dark-mode');
+        el.classList.toggle('light-mode');
+      });
+
+      const themeButton = document.getElementById('theme-toggle-button');
+      themeButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    }
+  </script>
+</body>
+</html>

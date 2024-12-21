@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="dark-mode">
+  <header class="header dark-mode">
+    <nav class="dark-mode">
+      <ul>
+        <li><a href="index.html" class="dark-mode">Home</a></li>
+        <li><a href="about.html" class="dark-mode">About</a></li>
+        <li><a href="achievements.html" class="dark-mode">Achievements</a></li>
+        <li><a href="resume.html" class="dark-mode">Resume</a></li>
+        <li><a href="contact.html" class="dark-mode">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <div class="education">
+      <h3>Education</h3>
+      <p>B.Tech in Computer Science Engineering</p>
+      <p>Specialized in Data Science</p>
+    </div>
+    <div class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fas fa-robot"></i> Machine Learning</li>
+        <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript</li>
+        <li><i class="fas fa-database"></i> SQL and NoSQL</li>
+      </ul>
+    </div>
+    <div class="download-resume">
+      <a href="assets/My_Resume.pdf" download="My_Resume.pdf" class="btn-download dark-mode">Download My Resume</a>
+    </div>
+  </section>
+
+  <footer class="dark-mode">
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <button id="theme-toggle-button" class="theme-toggle-button" onclick="toggleTheme()">🌙</button>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+
+      const elements = document.querySelectorAll('header, footer, nav, .card, form, nav ul li a');
+      elements.forEach(el => {
+        el.classList.toggle('dark-mode');
+        el.classList.toggle('light-mode');
+      });
+
+      const themeButton = document.getElementById('theme-toggle-button');
+      themeButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    }
+  </script>
+</body>
+</html>

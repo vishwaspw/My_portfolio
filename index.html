@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+  <header class="header dark-mode">
+    <nav class="dark-mode">
+      <ul>
+        <li><a href="index.html" class="dark-mode">Home</a></li>
+        <li><a href="about.html" class="dark-mode">About</a></li>
+        <li><a href="achievements.html" class="dark-mode">Achievements</a></li>
+        <li><a href="resume.html" class="dark-mode">Resume</a></li>
+        <li><a href="contact.html" class="dark-mode">Contact</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <section class="hero">
+    <h1>👋 Hi, I’m Vishwas, and I am:</h1>
+    <h2 class="typing-effect">A Data Science Enthusiast| Passionate About Innovation | A Lifelong Learner </h2>
+    <p>
+
+      I’m passionate about solving real-world problems with data, creating impactful projects, and constantly exploring new technologies. From building machine learning models to developing interactive applications, I enjoy bringing ideas to life through code and innovation.
+      
+      Feel free to explore my projects, learn more about me, or get in touch—I’d love to connect and collaborate!</p>
+    <p>Scroll down to explore!</p>
+    <a href="about.html" class="btn">Learn More</a>
+  </section>
+
+  <footer class="dark-mode">
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <button id="theme-toggle-button" class="theme-toggle-button" onclick="toggleTheme()">🌙</button>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+
+      const elements = document.querySelectorAll('header, footer, nav, .card, form, nav ul li a');
+      elements.forEach(el => {
+        el.classList.toggle('dark-mode');
+        el.classList.toggle('light-mode');
+      });
+
+      const themeButton = document.getElementById('theme-toggle-button');
+      themeButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+  <header class="header dark-mode">
+    <nav class="dark-mode">
+      <ul>
+        <li><a href="index.html" class="dark-mode">Home</a></li>
+        <li><a href="about.html" class="dark-mode">About</a></li>
+        <li><a href="achievements.html" class="dark-mode">Achievements</a></li>
+        <li><a href="resume.html" class="dark-mode">Resume</a></li>
+        <li><a href="contact.html" class="dark-mode">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate and dedicated Computer Science Engineering student currently in my 3rd year at the Bangalore Institute of Technology. With a strong foundation in data science, machine learning, and software development, I thrive on solving complex problems and contributing innovative solutions in the ever-evolving tech landscape.<br>
+
+      Over the years, I have honed my technical expertise by undertaking professional courses, including the prestigious Full Stack Data Science Pro program by PW Skills, where I gained hands-on experience in EDA, statistics, data visualization, and machine learning under the guidance of accomplished mentors. My learning journey extends to completing Andrew Ng's Machine Learning Specialization, which has further solidified my command of foundational ML concepts and algorithms.<br>
+      
+      I am also adept at programming in Python and Java, building interactive applications using HTML and CSS, and working with databases. With certifications and achievements such as a 5-star Python badge on HackerRank and a Learning badge from the Google Developer Group, I continuously strive to improve and validate my skill set.<br>
+      
+      Beyond academics, I am actively engaged in real-world projects. I have successfully worked on interactive data-driven applications like a real estate price prediction tool for Bangalore, emphasizing user-friendly design and functionality. Additionally, I have hands-on experience in extracting and analyzing data, deploying APIs, and creating actionable insights from datasets.<br>
+      
+      My career goal is to establish myself as a proficient Data Scientist or Data Analyst. To achieve this, I am deeply committed to staying updated with the latest technological advancements and trends while enhancing my proficiency in deployment tools, APIs, and end-to-end project workflows.
+      
+      I strongly believe in honesty, dedication, and contributing to society through technology. I aim to make a meaningful impact in every project I undertake, embodying professionalism and a continuous learning mindset.<br>
+      
+      Let’s collaborate to create something impactful and transformative!</p>
+  </section>
+
+  <footer class="dark-mode">
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <button id="theme-toggle-button" class="theme-toggle-button" onclick="toggleTheme()">🌙</button>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+
+      const elements = document.querySelectorAll('header, footer, nav, .card, form, nav ul li a');
+      elements.forEach(el => {
+        el.classList.toggle('dark-mode');
+        el.classList.toggle('light-mode');
+      });
+
+      const themeButton = document.getElementById('theme-toggle-button');
+      themeButton.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    }
+  </script>
+</body>
+</html>

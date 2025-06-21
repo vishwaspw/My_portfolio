@@ -2,16 +2,17 @@
 
 Welcome to my portfolio! This project showcases my skills, achievements, and projects in the field of computer science and data science. Explore the different sections to learn more about me and my work.
 
-## Table of Contents
+## Content in website
+- Home
 - About
-- Features
-- Technologies Used
-- Visit
+- Achievements
+- Resume
+- Contact
 
-## About
+## About the website
 This portfolio is designed to highlight my expertise and experience in various domains such as machine learning, web development, and data analysis. It includes sections like About Me, Projects, Achievements, Resume, and Contact.
 
-## Features
+## Features in the website
 - Responsive design
 - Dark and light theme switcher
 - Interactive elements and animations

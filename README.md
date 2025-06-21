@@ -31,14 +31,5 @@ This portfolio is designed to highlight my expertise and experience in various d
 - JavaScript
 - Font Awesome (for icons)
 
-## Getting Started
-To get a local copy up and running, follow these steps:
-
-### Prerequisites
-- Git
-- A modern web browser
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/vishwaspw/My_portfolio.git
+## Visit :
+[https://vishwportfolio.netlify.app/](#Website)
